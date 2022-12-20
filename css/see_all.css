@@ -1,0 +1,251 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.sidebar-card img{
+  width: 50%;
+}
+.sidebar-card{
+  display: inline-flex;
+  color: white;
+  padding: 16px;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  line-height: 10px;
+  align-items: center;
+  vertical-align: middle;
+}
+.sidebar-card span{
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.home-div{
+  margin-top: 30px;
+}
+a:link{
+  text-decoration: none;
+}
+
+.content {
+  margin-left: 200px;
+  background-image: linear-gradient(to top, #000000, #101010, #191919, #232323, #2c2c2c);
+
+  height: 100%;
+}
+.logo{
+  display:none;
+}
+.playlists{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.categories img{
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 10px;
+}
+.categories p{
+  color: white;
+  margin: 0 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+.categories{
+  display: inline-flex;
+  background-color: #2B2B2B;
+  margin: 20px;
+  border-radius: 10px;
+  width: 200px;
+  align-items: center;
+  
+}
+.track{
+  margin: 20px;
+}
+.track:hover{
+  transition: transform .5s ease;
+}
+.track:hover{
+  transform: scale(1.05);
+  overflow: hidden;
+}
+.playlist-image{
+  height: 180px;
+  border-radius: 10px;
+}
+.music-heading{
+  color: white;
+  margin: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+.playlist-para{
+  color: white;
+}
+.track-sub-div{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+.track-sub-div span{
+  color: white;
+  font-size: 30px;
+  
+}
+.playlist-para{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  margin: 0 20px 0 0;
+}
+#music-heading-colla{
+  margin-top: 100px;
+}
+.collaborates{
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  .content{
+    margin: 0 0 0 40px;
+  }
+
+  .collaborates{
+    grid-template-columns: auto;
+  }
+  .playlists{
+    grid-template-columns: auto;
+    align-items: center;
+  }
+  .playlist-image{
+    height: 130px;
+    overflow: hidden;
+  }
+  .categories{
+    height: 80px;
+  }
+  .categories img{
+    height: 80px;
+  }
+  .sidebar-card p{
+    display: none;
+  }
+  .track{
+    text-align: center;
+  }
+  .track-sub-div{
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  .content{
+    margin: 0 0 0 40px;
+  }
+
+  .sidebar-card p{
+    display: none;
+  }
+  .collaborates{
+    grid-template-columns: auto auto;
+  }
+  .playlists{
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+  .playlist-image{
+    height: 150px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 768px ) and (max-width: 998px){
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  .content{
+    margin: 0 0 0 40px;
+  }
+
+  .sidebar-card p{
+    display: none;
+  }
+  .collaborates{
+    grid-template-columns: auto auto;
+  }
+  .playlists{
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+  .playlist-image{
+    height: 150px;
+    overflow: hidden;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up)  */
+ @media only screen and (min-width: 992px){
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+ .content{
+    margin: 0 0 0 200px;
+  } 
+  .sidebar-card p{
+    display: block;
+  } 
+  .collaborates{
+    grid-template-columns: auto auto auto;
+  }
+  .playlists{
+    grid-template-columns: auto auto auto;
+    align-items: center;
+  }
+  .playlist-image{
+    height: 150px;
+    overflow: hidden;
+  }
+}

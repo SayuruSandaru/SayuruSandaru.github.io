@@ -1,0 +1,83 @@
+
+.contact{
+    display: grid;
+    margin-top: 100px;
+    height: 80vh;
+    grid-template-columns: 50% 40%;
+}
+.col-1{
+    align-content: start;
+    padding: 50px 100px;
+}
+.col-2{
+    padding: 20px 10px;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+textarea{
+    height: 150px;
+}
+.btn-contact{
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    background-color: #FA1F1B;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0px;
+    border-radius: 5px;
+}
+.btn-contact:hover{
+    background-color: #cccccc;
+    cursor: pointer;
+}
+.contactpara{
+    width: 60%;
+    text-align: justify;
+}
+.contact-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.212), black), url("../assets/contact.jpg");
+    height: 600px;
+    width: 98.9vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 700px) {
+    .contact{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .col-1{
+        padding: 10px;
+        justify-content: center;
+    }
+    .col-2{
+        padding: 10px;
+        justify-content: start;
+    }
+    .input-field{
+        width: 94%;
+    }
+    .contactpara{
+        text-align: center;
+        width: 100%;
+    }
+    .contact-heading{
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .contact-background-image{
+        height: 400px;
+        width: 98.9vw;
+        background-position: center;
+    }
+}
+
+

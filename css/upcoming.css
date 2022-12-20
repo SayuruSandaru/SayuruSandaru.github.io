@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  .hero {
+    background-image: url("https://images.pexels.com/photos/2952834/pexels-photo-2952834.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+  }
+
+  .event-info {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  .event-info div {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin: 50px 10px;
+    color: white;
+    text-align: center;
+
+  }
+
+  .event-info p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgb(224, 224, 224);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    text-align: left;
+  }
+
+  .ticket-button {
+    display: inline-block;
+    background-color: #fa1f1b;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .hero form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero form input[type="text"] {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+  }
+
+  .hero form input[type="text"]:focus {
+    outline: none;
+  }
+
+  .hero form button[type="submit"] {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .hero form button[type="submit"] svg {
+    fill: #0093d9;
+  }
+
+  @media (max-width: 600px) {
+    .event-info {
+      flex-direction: column;
+    }
+    .event-info p {
+        text-align: center;
+    }
+    .ticket-button{
+        margin-top: 15px;
+    }
+  }

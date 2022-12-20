@@ -1,0 +1,238 @@
+.main{
+    background-image: url("../assets/background.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: grid;
+    height: 91.6vh;
+    width: 100%;
+    align-content: center;
+    grid-auto-rows: 140px;  
+}
+
+.dot{
+    color: #F2E41B;
+}
+
+/* Our works */
+
+.our-works{
+    text-align: center;
+}
+.content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 50px;
+    margin: 0px 20px;
+    align-content: center;
+    justify-content:space-between;
+    
+}
+.done{
+    margin: 20px;
+    text-align: start;
+}
+.song-heading{
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+.btn-container{
+    width: 100%;
+    text-align: center;
+    margin: 120px 0px;
+}
+.thumbnail{
+    border-radius: 10px;
+    height: 200px;
+}
+
+.song-details{
+    text-align: left;
+}
+
+.icon{
+    padding-right: 10px;
+    height: 20px;
+    /* display: flexbox; */
+    /* text-align: start; */
+}
+.icon-list{
+    text-align: start;
+}
+.row {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    margin: 8px;
+    position: relative;
+    text-align: center;
+  }
+  .row * {
+    box-sizing: border-box;
+    transition: all 0.45s ease;
+  }
+  .row::before,
+.row::after {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* border-top: 32px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 32px solid rgba(0, 0, 0, 0.5); */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+    transform: scaleY(2);
+}
+.row thumbnail {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+  }
+  .row figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    z-index: 2;
+    transition-delay: 0.1s;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .row:hover::before,
+  .row:hover::after {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .row:hover thumbnail{
+    opacity: 0.7;
+  }
+  
+  .row:hover figcaption {
+    opacity: 1;
+  }
+
+
+.btn-submit{
+    background-color: #FA1F1B;
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px;
+    padding: 10px 15px;
+    text-align: center;
+    margin: 60px 0 30px 0;
+}
+#see-more{
+    background-color: #FA1F1B;
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px;
+    padding: 10px 15px;
+    text-align: center;
+}
+#see-more:hover{
+    cursor: pointer;
+    background-color: #c81916;
+}
+
+@media only screen and (max-width: 700px) {
+    .main{
+        background-color: black;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(rgba(17, 16, 16, 0.115), black), url("../assets/background-phone.jpg");
+        background-size: contain;
+    }
+    .heading {
+        color: white;
+        font-size: 30px;
+        text-align: center;
+    }
+    p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .main-items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #main-wrapper{
+        margin: 10px;
+    }
+
+    .content{
+        display: grid;
+        grid-template-columns: auto;
+        margin: auto;
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (min-width: 701px) {
+    .content {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 10px;
+        gap: 10px;
+        margin: 0px 20px;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .col-1 {
+        align-content: start;
+        padding: 50px 50px 50px 30px;
+    }
+    .contactpara{
+        width: 100%;
+    }
+    .contact {
+        grid-template-columns: 50% 50%;
+    }
+    .col-2 {
+        padding: 20px 30px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .content {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 10px;
+        gap: 10px;
+        margin: 0px 20px;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .content {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        gap: 10px;
+        margin: 0px 20px;
+        align-content: center;
+        justify-content: space-between;
+    }
+}
