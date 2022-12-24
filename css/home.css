@@ -50,6 +50,7 @@
 
 .song-details{
     text-align: left;
+    padding: 5px 0;
 }
 
 .icon{
@@ -60,6 +61,7 @@
 }
 .icon-list{
     text-align: start;
+    padding-top: 10px;
 }
 .row {
     background-color: #000;

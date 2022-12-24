@@ -41,18 +41,54 @@ textarea{
 }
 .contact-background-image{
     background-image: linear-gradient(rgba(0, 0, 0, 0.212), black), url("../assets/contact.jpg");
-    height: 600px;
+    height: 700px;
     width: 98.9vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+input[type="text"], input[type="email"],textarea {
+    border-bottom: 3px solid #996b6b;
+}
+input::placeholder, textarea::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+.contact-background-image div h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+}
+.contact-background-image div p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    display: block;
 }
 
 @media only screen and (max-width: 700px) {
+    .contact-background-image{
+        height: 1000px;
+    }
+    .contact-background-image div h1{
+        font-size: 35px;
+        padding: 0px 10px;
+    }
+    .contact-background-image div p{
+        font-size: 15px;
+        padding: 0px 10px;
+    }
     .contact{
         display: grid;
         grid-template-columns: auto;
     }
+
     .col-1{
         padding: 10px;
         justify-content: center;
@@ -67,9 +103,11 @@ textarea{
     .contactpara{
         text-align: center;
         width: 100%;
+        font-weight: 200;
     }
     .contact-heading{
         text-align: center;
+        font-weight: 400;
         padding-bottom: 15px;
     }
 
