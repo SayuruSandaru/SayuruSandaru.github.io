@@ -127,6 +127,9 @@ a:link{
     height: 100%;
     overflow: auto;
   }
+  .sidebar-card img{
+   width: 25px; 
+  }
   .content{
     margin: 0 0 0 40px;
   }
@@ -170,6 +173,7 @@ a:link{
     height: 100%;
     overflow: auto;
   }
+  
   .content{
     margin: 0 0 0 40px;
   }
