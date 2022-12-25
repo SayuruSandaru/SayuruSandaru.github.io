@@ -106,4 +106,7 @@ body {
     .ticket-button{
         margin-top: 15px;
     }
+    .hero form {
+      top: 60%;
+    }
   }
