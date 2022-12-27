@@ -242,10 +242,10 @@ a:link{
     display: block;
   } 
   .collaborates{
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
   }
   .playlists{
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     align-items: center;
   }
   .playlist-image{
