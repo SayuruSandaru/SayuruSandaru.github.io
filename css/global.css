@@ -31,8 +31,11 @@ p{
     z-index: 1000; 
 }
 #nav-header.active{
-    background-color: #000;
+    background-color: #000 !important;
 }
+#nav-header.scrolled {
+    background-color: #000 !important;
+  }
 #logo img{
     width: 40px;
 }
@@ -43,9 +46,29 @@ p{
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
+@keyframes appearLine {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
 .nav-bar a:hover {
     color: #F2E41B;
+    position: relative;
+    animation: appearLine .5s linear;
 }
+.nav-bar a:hover:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #F2E41B;
+    animation: appearLine .5s linear;
+  }
 .nav-bar a:visited, a:active {
     text-decoration: none;
 }

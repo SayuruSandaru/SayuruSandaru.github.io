@@ -35,12 +35,11 @@ body {
     text-align: center;
   }
 
-  h2 {
+  .upcoming-heading {
     font-size: 32px;
     margin: 50px 10px;
     color: white;
     text-align: center;
-
   }
 
   .event-info p {

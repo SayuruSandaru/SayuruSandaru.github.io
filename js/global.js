@@ -6,3 +6,14 @@ function onMenuClick() {
   navbar.classList.toggle(responsive_class_name);
   navheader.classList.toggle("active");
 }
+
+window.addEventListener("scroll", function () {
+  var scrollY = window.scrollY;
+  if (scrollY > 100) {
+    var navHeader = document.getElementById("nav-header");
+    navHeader.classList.add("scrolled");
+  } else {
+    var navHeader = document.getElementById("nav-header");
+    navHeader.classList.remove("scrolled");
+  }
+});
